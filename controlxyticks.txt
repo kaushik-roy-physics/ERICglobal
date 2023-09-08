@@ -1,0 +1,42 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Create some example data
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Create a figure and axis
+fig, ax = plt.subplots()
+
+# Set the number of desired ticks
+num_ticks = 6
+
+# Set the x-axis tick locator to AutoLocator with desired number of ticks
+ax.xaxis.set_major_locator(plt.MaxNLocator(num_ticks))
+
+# Plot the data
+ax.plot(x, y)
+
+# Show the plot
+plt.show()
+
+
+
+
+import matplotlib.ticker as ticker
+
+# Create a figure and axis
+fig, ax = plt.subplots()
+
+# Set the x-axis tick locator to AutoLocator with desired number of ticks
+ax.xaxis.set_major_locator(plt.MaxNLocator(num_ticks))
+
+# Set custom tick labels
+custom_tick_labels = ['A', 'B', 'C', 'D', 'E', 'F']
+ax.xaxis.set_major_formatter(ticker.FixedFormatter(custom_tick_labels))
+
+# Plot the data
+ax.plot(x, y)
+
+# Show the plot
+plt.show()

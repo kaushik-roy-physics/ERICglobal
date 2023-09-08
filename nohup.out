@@ -1,0 +1,20 @@
+GPU computation took 95706.9455549717 seconds
+Data saved to rhovsKcriticalLsmall.json
+GPU computation took 101333.90641832352 seconds
+Data saved to daidonormnearKLsmall.json
+GPU computation took 95909.06310510635 seconds
+Data saved to rhovsKcriticalLsmall_2.json
+GPU computation took 101031.49848890305 seconds
+Data saved to daidonormnearKLmedium.json
+GPU computation took 100882.90640735626 seconds
+Data saved to daidonormnearKLsmall.json
+  File "/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/datagen_rhovsK.py", line 78
+    output filename = "rhovsKnearonsetLmedium.json"
+           ^^^^^^^^
+SyntaxError: invalid syntax
+GPU computation took 96027.73038196564 seconds
+Data saved to rhovsKnearonsetLmedium.json
+GPU computation took 127864.71470594406 seconds
+Data saved to rhovsLK.json
+GPU computation took 128061.07763123512 seconds
+Data saved to rhovsKchangingL.json
