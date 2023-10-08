@@ -39,7 +39,7 @@ def plot_rho_vs_time_multi_L(rhos, L_values, T, tsteps, filename_prefix):
     ax1.legend(loc='lower right', fontsize = 15)
     ax2.legend(loc='upper right', fontsize = 15)
 
-    plt.savefig(f'{filename_prefix}_rand1.pdf')
+    plt.savefig(f'{filename_prefix}_N10000_Cauchy_rand.pdf')
     plt.show()
     
 # Function to load the data from a JSON file
@@ -54,7 +54,7 @@ T = 1000
 dt = 0.1
 tsteps = int(T/dt)
 
-filename = "rhovstimeK4LhighN25000.json"
+filename = "rhovstimeK10Lmedium.json"
 rhos_loaded, L_values_loaded = load_data_from_json(filename)
 filename_prefix = filename.split(".")[0]  # Extract the filename without the extension
 plot_rho_vs_time_multi_L(rhos_loaded, L_values_loaded, T, tsteps, filename_prefix)

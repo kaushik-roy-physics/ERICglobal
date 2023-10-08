@@ -43,8 +43,8 @@ def calculate_order_function(theta, omega, K, L ,N, T, dt):
 
 # define the Kuramoto model parameters
 N = 10000  # number of oscillators
-K = 4.0  # coupling strength
-#L_values = [0, 0.3, 0.5, 0.8]  # relative strengths
+K = 10.0  # coupling strength
+L_values = [1.5, 2.0]  # relative strengths
 #L_values = [1.0, 1.5, 2 , 2.5]
 #L_values = [3.0, 4.0, 5.0, 7.0]
 
@@ -59,9 +59,6 @@ tsteps = int(T / dt)  # total number of steps
 omega_in = cp.random.standard_cauchy(N)
 theta_in = cp.random.uniform(-cp.pi, cp.pi, N)
 
-# simulate the Kuramoto model and compute H_theta for different L values
-theta_osc = []
-H_theta = []
 
 # simulate the Kuramoto model and compute H_theta for different L values
 theta_osc = []
@@ -86,7 +83,7 @@ data_to_save = {
 }
 
 # Save data to a JSON file
-output_filename = "daidoorderfunctionK4Lmedium.json"
+output_filename = "daidoorderfunctionK10Lmedium.json"
 
 with open(output_filename, 'w') as f:
     json.dump(data_to_save, f)

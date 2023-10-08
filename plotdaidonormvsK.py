@@ -8,8 +8,8 @@ plt.rcParams["figure.autolayout"] = True
 plt.rcParams["figure.figsize"] = (5, 5)
 
 # Load data from the JSON file
-filename = "daidonormnearKLmedium.json"
-#filename = "daidonormvsKchangingL.json"
+#filename = "daidonormnearKLmedium.json"
+filename = "daidonormvsKchangingL.json"
 
 filename_prefix = filename.split(".")[0]  # Extract the filename without the extension
 
@@ -40,11 +40,11 @@ plt.legend(loc = 'upper left', fontsize = 15)
 
 
 # Use MaxNLocator to determine the maximum number of x-ticks
-locator = ticker.MaxNLocator(nbins=5)  # Adjust nbins as needed
+locator = ticker.MaxNLocator(nbins=6)  # Adjust nbins as needed
 plt.gca().xaxis.set_major_locator(locator)
 
 # Round off the tick values to two decimal places
-plt.gca().xaxis.set_major_formatter(ticker.StrMethodFormatter("{x:.2f}"))
+plt.gca().xaxis.set_major_formatter(ticker.StrMethodFormatter("{x:.1f}"))
 
 plt.xticks(fontsize=18)
 plt.yticks(fontsize=18)

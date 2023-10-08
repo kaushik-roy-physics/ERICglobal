@@ -38,11 +38,11 @@ def plot_order_function(filename, filename_prefix):
     y_ticks_rounded = [round(val, 1) for val in y_ticks]  # Round to 1 decimal place
     plt.yticks(y_ticks, y_ticks_rounded, fontsize=16)
 
-    plt.savefig(f'{filename_prefix}_N10000_rand1.pdf')
+    plt.savefig(f'{filename_prefix}_N10000_rand.pdf')
     plt.show()
 
 # Specify the filename of the JSON output
-filename = "daidoorderfunctionK4Lmedium.json"
+filename = "daidoorderfunctionK10Lmedium.json"
 
 filename_prefix = filename.split(".")[0]  # Extract the filename without the extension
 

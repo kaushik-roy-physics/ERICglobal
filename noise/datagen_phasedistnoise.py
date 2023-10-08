@@ -1,0 +1,75 @@
+import cupy as cp
+import json
+import time
+
+cp.random.seed(12345)
+
+
+def theta_noise(theta, omega, K, L, D, N, dt):
+    sin_theta = cp.sin(theta - theta[:, None])
+    sinsq_theta = sin_theta ** 2
+
+    noise = cp.random.normal(0, cp.sqrt(2 * D * dt), N)
+
+    sin_theta_sum = cp.sum(sin_theta, axis=1)
+    sinsq_theta_sum = cp.sum(sinsq_theta, axis=1)
+
+    dtheta_dt = omega + ((1 / N) * K * sin_theta_sum) + ((1 / N) * K * L * sinsq_theta_sum) + noise
+    theta += dtheta_dt * dt 
+    return theta
+
+# define the Kuramoto model parameters
+N = 10000  # number of oscillators
+K = 4.0    # coupling strength
+L = 8.0  # Relative coupling strength
+
+# define the simulation parameters
+T = 1000         # Integration time
+dt = 0.1          # Timestep
+tsteps = int(T/dt)  # total number of steps
+
+D_values = [0.0, 0.5, 1.0, 10.0]
+
+start_time = time.time()
+
+# Create a list to store data for each value of D
+data_list = []
+
+for D in D_values:
+    # initialize the phase and natural frequency arrays
+    omega_in = cp.random.standard_cauchy(N)
+    theta_in = cp.random.uniform(-cp.pi, cp.pi, N)
+
+    theta_osc = cp.zeros(N)
+
+
+    # simulate the Kuramoto model and compute the order parameter modulus
+    for i in range(tsteps):
+        theta = theta_noise(theta_in, omega_in, K, L, D, N, dt)
+
+    theta_osc = (theta + cp.pi) % (2 * cp.pi) - cp.pi  # Ensuring angle is within -pi to pi
+
+    # Calculate the phase distribution as a function of theta
+    num_bins = 100  # Number of bins for the histogram
+    hist, bins = cp.histogram(theta_osc, bins=num_bins, range=(-cp.pi, cp.pi))
+
+    # Normalize the histogram to obtain the fraction (normalized distribution)
+    theta_centers = (bins[1:] + bins[:-1]) / 2
+    normalized_hist = hist / cp.sum(hist)
+
+    data = {"theta_centers": cp.asnumpy(theta_centers).tolist(),
+            "hist": cp.asnumpy(normalized_hist).tolist(),
+            "D": D}
+
+    data_list.append(data)
+
+end_time = time.time()
+print(f"GPU computation took:", end_time - start_time, "seconds")
+
+# Save all data to a single JSON file
+output_filename = "phasedistribution_K4L8_noise.json"
+
+with open(output_filename, 'w') as f:
+    json.dump(data_list, f)
+
+print("Data saved to", output_filename)

@@ -20,12 +20,12 @@ def generate_plot_from_json(filename, filename_prefix):
     plt.xticks(fontsize=16)  # Set x-axis tick fontsize
     plt.yticks(fontsize=16)  # Set y-axis tick fontsize
     
-    plt.savefig(f'{filename_prefix}_N10000_rand1.pdf')
+    plt.savefig(f'{filename_prefix}_N10000_Cauchy_rand.pdf')
     plt.ylim(-np.pi, np.pi)
     plt.show()
 
 # Specify the filename of the JSON output
-filename = "psidiffvsLK4.json"
+filename = "psidiffvsLK3.json"
 
 filename_prefix = filename.split(".")[0]  # Extract the filename without the extension
 

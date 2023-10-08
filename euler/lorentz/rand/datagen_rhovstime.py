@@ -54,8 +54,8 @@ def save_data_to_json(rhos, L_values, filename):
 if __name__ == "__main__":
     # parameters of the model
     N = 10000
-    K = 2.5
-    L_values = [0, 2, 3]
+    K = 3
+    L_values = [0.0, 1.0, 1.5, 2.0]
 
     # simulation parameters
     T = 1000
@@ -68,7 +68,7 @@ if __name__ == "__main__":
     theta_in = cp.random.uniform(-cp.pi, cp.pi, N)
     
     # Define the output filename
-    output_filename = "rhovstimeK2point5Lmedium.json"
+    output_filename = "rhovstimeK3Lmedium.json"
     
     start_time = time.time()
 

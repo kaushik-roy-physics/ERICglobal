@@ -17,15 +17,15 @@ def plot_data(K_cpu, rho_1_values, rho_2_values, L_values, filename_prefix):
 
     ax[0].set_xlabel(r'$K$', fontsize=20)
     ax[0].set_ylabel(r"$\rho_1$", fontsize=20)
-    ax[0].legend(loc='upper left', fontsize=14)
+    ax[0].legend(loc='lower right', fontsize=14)
     
-    ax[0].xaxis.set_major_locator(plt.MaxNLocator(6))
+    ax[0].xaxis.set_major_locator(plt.MaxNLocator(5))
     
     ax[1].set_xlabel(r'$K$', fontsize=20)
     ax[1].set_ylabel(r'$\rho_{2}$', fontsize=20)
     ax[1].legend(loc='upper left', fontsize=14)
     
-    ax[1].xaxis.set_major_locator(plt.MaxNLocator(6))
+    ax[1].xaxis.set_major_locator(plt.MaxNLocator(5))
     
     # Change the fontsize of the x-ticks and y-ticks
     ax[0].tick_params(axis='both', which='both', labelsize=18)
@@ -35,8 +35,9 @@ def plot_data(K_cpu, rho_1_values, rho_2_values, L_values, filename_prefix):
     
     plt.show()
 
-
-filename = "rhovsKLsmall.json"
+filename =  "rhovsKnearonset_Lsmall_2.json"
+    
+#filename = "rhovsK_changingL.json"
 
 #filename = "rhovsKLmedium.json"
 #filename = "rhovsKLhigh.json"
@@ -50,7 +51,7 @@ L_values = [item['L'] for item in data]
 rho_1_values = [item['rho_1'] for item in data] 
 rho_2_values = [item['rho_2'] for item in data]
 
-K = cp.linspace(0, 5, 100)
+K = cp.linspace(1.5, 1.8, 100)
 K_cpu = K.get()  # To use for plotting
 
 plot_data(K_cpu, rho_1_values, rho_2_values, L_values, filename_prefix)

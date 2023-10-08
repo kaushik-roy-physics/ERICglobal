@@ -1,0 +1,19 @@
+Simulation for D=0.0 took: 754.3628621101379 seconds
+Simulation for D=0.1 took: 915.0947675704956 seconds
+Simulation for D=1.0 took: 877.9661855697632 seconds
+Simulation for D=10.0 took: 694.5657856464386 seconds
+Data saved to phasedistribution_K4L8_noise.json
+GPU computation took: 2764.0266115665436 seconds
+Data saved to phasedistribution_K4Lhalf_noise.json
+GPU computation took: 2766.84974861145 seconds
+Data saved to phasedistribution_K3L6_noise.json
+GPU computation took: 2777.248069047928 seconds
+Data saved to phasedistribution_K3L3_noise.json
+GPU computation took 141135.41632056236 seconds
+Data saved to rhovsK_Lsmall_noise.json
+GPU computation took: 2775.0593490600586 seconds
+Data saved to phasedistribution_K4L8_noise.json
+GPU computation took 129425.61777448654 seconds
+Data saved to rhovsKnearonsetLhalf.json
+GPU computation took 127921.66084337234 seconds
+Data saved to rhovsKnearonsetLhalf_2.json

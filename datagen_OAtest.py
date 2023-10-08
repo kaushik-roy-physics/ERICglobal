@@ -53,10 +53,10 @@ def generate_rhos(theta, omega, K, L, N, dt, tsteps):
     return rho_ratios
 
 # define the Kuramoto model parameters
-N = 100
+N = 10000
 
 # define the simulation parameters
-T = 100  # Integration time
+T = 1000  # Integration time
 dt = 0.1  # Timestep
 tsteps = int(T / dt)  # total number of steps
 

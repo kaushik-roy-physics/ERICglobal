@@ -25,7 +25,7 @@ def generate_plot_from_json(filename, filename_prefix):
     plt.show()
 
 # Specify the filename of the JSON output
-filename = "phivsLK4.json"
+filename = "phivsLK3.json"
 
 filename_prefix = filename.split(".")[0]  # Extract the filename without the extension
 

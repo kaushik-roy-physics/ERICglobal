@@ -60,7 +60,7 @@ tsteps = int(T / dt)  # total number of steps
 
     
 # Set the coupling strength
-K = 4.0  # fixed K value
+K = 3.0  # fixed K value
 L_values = cp.linspace(0.0, 3.0, 100)  # range of L values
 
 # Generate random samples from a standard Cauchy distribution for omega and theta
@@ -78,7 +78,7 @@ for i, L in enumerate(L_values):
     psi_diff[i] = generate_psi_diff(theta_in, omega_in, K, L, N, dt, tsteps)
 
 # Specify the desired filename for the JSON output
-output_filename = "psidiffvsLK4.json"
+output_filename = "psidiffvsLK3.json"
 
 # Save the output to JSON
 save_output_to_json(L_values, psi_diff, output_filename)

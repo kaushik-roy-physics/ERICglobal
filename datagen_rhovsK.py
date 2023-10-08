@@ -43,10 +43,10 @@ T = 1000
 dt = 0.1
 tsteps = int(T / dt)
 
-K = cp.linspace(2.2, 2.5, 100)
+K = cp.linspace(0, 5, 100)
 K_cpu = K.get()  # To use for plotting
 
-L_values = [0.0, 1.5, 2.0]
+L_values = [0.0, 0.5, 1.0, 2.0]
 
 #L_values = [0.0, 0.5, 1.0, 2.0]
 
@@ -78,7 +78,7 @@ end_time = time.time()
 
 print("GPU computation took", end_time - start_time, "seconds")
 
-output_filename = "rhovsKnearonsetLmedium.json"
+output_filename = "rhovsKchangingL.json"
 
 #output_filename = "rhovsKchangingL.json"
 #output_filename = "rhovsKLsmall.json"

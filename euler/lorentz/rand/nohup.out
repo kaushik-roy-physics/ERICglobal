@@ -1,0 +1,18 @@
+GPU computation took 35145.949877262115 seconds
+Traceback (most recent call last):
+  File "/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/euler/lorentz/rand/datagen_rhovstime.py", line 78, in <module>
+    rho_1, rho_2 = generate_rhos(theta_in, omega_in, K, L, N, dt, tsteps)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/euler/lorentz/rand/datagen_rhovstime.py", line 39, in generate_rhos
+    rho_2[i] = r2
+    ~~~~~^^^
+  File "cupy/_core/core.pyx", line 1597, in cupy._core.core._ndarray_base.__setitem__
+  File "cupy/_core/_routines_indexing.pyx", line 52, in cupy._core._routines_indexing._ndarray_setitem
+  File "cupy/_core/_routines_indexing.pyx", line 999, in cupy._core._routines_indexing._scatter_op
+  File "cupy/_core/_routines_indexing.pyx", line 264, in cupy._core._routines_indexing._prepare_slice_list
+  File "/home/kaushikroy/anaconda3/lib/python3.11/site-packages/numpy/core/numeric.py", line 1878, in isscalar
+    @set_module('numpy')
+    
+KeyboardInterrupt
+GPU computation took 2776.9070308208466 seconds
+GPU computation took 2798.0532705783844 seconds

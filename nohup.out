@@ -18,3 +18,167 @@ GPU computation took 127864.71470594406 seconds
 Data saved to rhovsLK.json
 GPU computation took 128061.07763123512 seconds
 Data saved to rhovsKchangingL.json
+GPU computation took 127592.61010098457 seconds
+Data saved to rhovsKchangingL.json
+GPU computation took 134668.1949365139 seconds
+Data saved to daidonormvsKchangingL.json
+Traceback (most recent call last):
+  File "/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/datagen_OAtest.py", line 81, in <module>
+    rho_ratios[i] = generate_rhos(theta_in, omega_in, K, L, N, dt, tsteps)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/datagen_OAtest.py", line 44, in generate_rhos
+    theta_exp_2 = cp.exp(1j * 2 * theta)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+GPU computation took 31985.489463567734 seconds
+Data saved as OAtestK4.json
+GPU computation for alpha=0.001 took 2073.240444421768 seconds
+GPU computation for alpha=0.01 took 1605.4405226707458 seconds
+GPU computation for alpha=0.1 took 1382.6190242767334 seconds
+GPU computation for alpha=1 took 1382.620391368866 seconds
+Saved output as: deltarhovstimeK4L8.json
+GPU computation for alpha=0.001 took 1382.8656389713287 seconds
+GPU computation for alpha=0.01 took 1410.6551418304443 seconds
+GPU computation for alpha=0.1 took 1382.891518831253 seconds
+GPU computation for alpha=1 took 1949.1988508701324 seconds
+Saved output as: deltarhovstimeK4Lhalf.json
+GPU computation took 3317.5164427757263 seconds
+Saved file as: deltarhovsalphaK1Lhalf.json
+GPU computation took 2606.0333201885223 seconds
+Saved file as: deltarhovsalphaK4Lhalf.json
+GPU computation for alpha=0.001 took 1390.6159408092499 seconds
+GPU computation for alpha=0.01 took 1216.4026656150818 seconds
+GPU computation for alpha=0.1 took 640.3619232177734 seconds
+GPU computation for alpha=1 took 640.4281013011932 seconds
+Saved output as: deltarhovstimeK1Lhalf.json
+GPU computation took 1278.7585060596466 seconds
+Saved file as: deltarhovsalphaK4L8.json
+GPU computation took 2080.236546754837 seconds
+GPU computation took 2576.6179461479187 seconds
+Data saved to daidoorderfunctionK10Lsmall.json
+GPU computation took 971.8821036815643 seconds
+Data saved to daidoorderfunctionK10Lmedium.json
+GPU computation took 960.7419922351837 seconds
+GPU computation took 645.1303472518921 seconds
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches.py:135: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Frequency of entrainment  1.2953695052301701
+libGL error: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+libGL error: failed to load driver: swrast
+Frequency of entrainment  11.964313848485167
+GPU computation took 652.0716903209686 seconds
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches.py:144: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Frequency of entrainment  11.964313848485167
+GPU computation took 652.0755858421326 seconds
+Traceback (most recent call last):
+  File "/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py", line 92, in <module>
+    final_theta, H_theta_final, H_derivative_final = calculate_quantities(theta_in, omega_in, K, L_values, N, T, dt)
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py", line 63, in calculate_quantities
+    H_theta += H_daido(theta_osc, K, L, N)
+    ^^^^^^^
+UnboundLocalError: cannot access local variable 'H_deriative' where it is not associated with a value
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py:150: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Frequency of entrainment  11.964313848485167
+GPU computation took 634.1530945301056 seconds
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches.py:144: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Frequency of entrainment  11.964313848485167
+GPU computation took 932.8277742862701 seconds
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py:150: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Frequency of entrainment  11.964313848485167
+GPU computation took 351.8331654071808 seconds
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py:150: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Frequency of entrainment  11.964313848485167
+GPU computation took 353.353303194046 seconds
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py:152: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Frequency of entrainment  11.964313848485167
+17.53357900056431
+GPU computation took 353.3830785751343 seconds
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py:153: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Frequency of entrainment  12.185597127120712
+5.330840768326764
+GPU computation took 703.5715291500092 seconds
+libGL error: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+libGL error: failed to load driver: swrast
+Frequency of entrainment  12.185597127120712
+GPU computation took 706.6939964294434 seconds
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py:153: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Frequency of entrainment  11.964313848485167
+GPU computation took 351.8320677280426 seconds
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py:153: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Frequency of entrainment  12.086824657826153
+GPU computation took 3790.5580196380615 seconds
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py:153: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Frequency of entrainment  12.185597127120712
+GPU computation took 1527.3573880195618 seconds
+GPU computation took 65094.75801348686 seconds
+Traceback (most recent call last):
+  File "/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py", line 100, in <module>
+    final_theta, H_theta_final, H_derivative_final = calculate_quantities(theta_in, omega_in, K, L_values, N, T, dt)
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py", line 58, in calculate_quantities
+    theta += dtheta_dt(theta, omega, K, L, N) * dt
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py", line 11, in dtheta_dt
+    sin_theta = cp.sin(theta - theta[:, None])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cupy/_core/_kernel.pyx", line 1287, in cupy._core._kernel.ufunc.__call__
+  File "cupy/_core/_kernel.pyx", line 160, in cupy._core._kernel._preprocess_args
+  File "cupy/_core/_kernel.pyx", line 146, in cupy._core._kernel._preprocess_arg
+TypeError: Unsupported type <class 'numpy.ndarray'>
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistable_count.py:233: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Number of stable phases: 2809
+Number of phases with almost the same frequencies: 2249
+Minimum of frequencies: -35.5989803151788
+Maximum of frequencies: 275.7561930637419
+GPU computation took 772.541380405426 seconds
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/bistablebranches_tdisc.py:161: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+GPU computation took 418.8023536205292 seconds
+Frequency of entrainment  8.071481014651573
+Traceback (most recent call last):
+  File "/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/dthetadt_matrix.py", line 110, in <module>
+    plt.imshow(omega_matrix, cmap='viridis', extent=[0, N, 0, N], origin='upper')
+  File "/home/kaushikroy/anaconda3/lib/python3.11/site-packages/matplotlib/pyplot.py", line 2695, in imshow
+    __ret = gca().imshow(
+            ^^^^^^^^^^^^^
+  File "/home/kaushikroy/anaconda3/lib/python3.11/site-packages/matplotlib/__init__.py", line 1442, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kaushikroy/anaconda3/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 5665, in imshow
+    im.set_data(X)
+  File "/home/kaushikroy/anaconda3/lib/python3.11/site-packages/matplotlib/image.py", line 697, in set_data
+    self._A = cbook.safe_masked_invalid(A, copy=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kaushikroy/anaconda3/lib/python3.11/site-packages/matplotlib/cbook/__init__.py", line 709, in safe_masked_invalid
+    x = np.array(x, subok=True, copy=copy)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cupy/_core/core.pyx", line 1480, in cupy._core.core._ndarray_base.__array__
+TypeError: Implicit conversion to a NumPy array is not allowed. Please use `.get()` to construct a NumPy array explicitly.
+Frequency of entrainment  8.071481014651573
+Traceback (most recent call last):
+  File "/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/dthetadt_matrix.py", line 114, in <module>
+    sns.heatmap(omega_matrix, cmap='viridis', cbar_kws={'label': 'Omega Matrix Values'})
+  File "/home/kaushikroy/anaconda3/lib/python3.11/site-packages/seaborn/matrix.py", line 446, in heatmap
+    plotter = _HeatMapper(data, vmin, vmax, cmap, center, robust, annot, fmt,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kaushikroy/anaconda3/lib/python3.11/site-packages/seaborn/matrix.py", line 115, in __init__
+    plot_data = np.ma.masked_where(np.asarray(mask), plot_data)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kaushikroy/anaconda3/lib/python3.11/site-packages/numpy/ma/core.py", line 1933, in masked_where
+    raise IndexError("Inconsistent shape between the condition and the input"
+IndexError: Inconsistent shape between the condition and the input (got (1000, 1) and (1000,))
+/home/kaushikroy/Documents/ERICglobal/CuPy/datafiles/scaling_bistability.py:175: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+GPU computation took 459.931560754776 seconds
